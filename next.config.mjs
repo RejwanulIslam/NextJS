@@ -1,4 +1,27 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const nextConfig = {
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'www.themealdb.com',
+       
+      },
+    ],
+  },
 
-export default nextConfig;
+  
+  // async redirects() {
+  //   return [
+  //     // Basic redirect
+  //     {
+  //       source: '/members/add',
+  //       destination: '/members',
+  //       permanent: true,
+  //     },
+    
+  //   ]
+  // }
+}
+
+export default nextConfig ;
